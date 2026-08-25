@@ -1,7 +1,8 @@
+import hamburgerIcon from "./assets/🦆 icon _hamburger menu_.svg"
 const Nav = () => {
     return (
       <nav>
-        <ul>
+        <ul className="nav-items desktop-view">
           <li>
             <a href="">HOME</a>
           </li>
@@ -21,6 +22,7 @@ const Nav = () => {
             <a href="">LOGIN</a>
           </li>
         </ul>
+        <button className="nav-button mobile-view" type="button"><img src={hamburgerIcon} alt="Hamburger menu"/></button>
       </nav>
     );
 }

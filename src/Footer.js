@@ -5,8 +5,9 @@ import linkedin from "./assets/linkedin.svg"
 const Footer = () => {
   return (
     <footer>
-      <img src={logo} />
-      <nav>
+      <img src={logo} className="footer-logo"/>
+      <nav className="footer-nav">
+        <p>Navigation:</p>
         <ul>
           <li>
             <a href="">HOME</a>
@@ -28,15 +29,15 @@ const Footer = () => {
           </li>
         </ul>
       </nav>
-      <div>
+      <div className="footer-contacts">
         <h2>Contacts</h2>
         <adress>
-          <div>Address</div>
+          <p>Address</p>
           <a href="tel:">Phone number</a>
           <a href="mailto:">Email</a>
         </adress>
       </div>
-      <div>
+      <div className="footer-social">
         <p>Sosial Media</p>
         <a href="">
           <img src={instagram} width={50} />
