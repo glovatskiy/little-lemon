@@ -129,7 +129,7 @@ ul {
   font-weight: 700;
 }
 .order-delivery-img{
-  width: 30px;
+  width: 20px;
   padding-left: 32px;
 }
 .card-delivery{
@@ -146,6 +146,57 @@ margin-top: auto;
   font-size: 16px;
   font-weight: 500;
   border-radius: 16px;
+}
+.testimonials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #495e57;
+  padding: 32px;
+  color: #495e57;
+  padding-bottom: 40px;
+}
+.testimonials-title{
+margin: 24px 0 24px;
+  color: #edefee;
+  font-family: "Karla", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.testimonials-container{
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  gap: 24px;
+  padding: 32px 0px;
+}
+.testimonial-card{
+  background-color: #edefee;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial-info{
+  display: flex;
+  align-items: center;
+}
+.reviewer-photo{
+  width: 80px;
+  border-radius: 50%;
+  margin: 8px;
+}
+.reviewer-name{
+  margin-top: auto;
+}
+.review-text{
+  font-size: 16px;
+  padding-right: 4%;
+}
+.rating{
+  font-weight: bold;
+  font-size: 14px;
 }
 @media (max-width: 900px) {
   .hero {
@@ -170,6 +221,9 @@ margin-top: auto;
     grid-template-columns: 1fr;
     justify-items: center;
   }
+  .specials {
+    padding: 32px 16px;
+  }
 }
 @media (max-width: 962px) {
   .desktop-view {
@@ -179,8 +233,23 @@ margin-top: auto;
     display: block;
   }
 }
-@media (min-width: 901px) and (max-width: 1300px) {
+@media (min-width: 901px) and (max-width: 1200px) {
   .specials-cards-container {
     grid-template-columns: repeat(2, 350px);
   }
+}
+@media (min-width: 901px) and (max-width: 1350px) {
+  .testimonials-container{
+   grid-template-columns: repeat(3, 250px);
+}
+}
+@media (min-width: 376px) and (max-width: 900px) {
+  .testimonials-container{
+   grid-template-columns: repeat(2, 250px);
+}
+}
+@media (max-width: 375px) {
+  .testimonials-container{
+   grid-template-columns: 250px;
+}
 }
