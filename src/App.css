@@ -51,9 +51,9 @@ ul {
   border-radius: 16px;
 }
 .hero-img {
-  aspect-ratio: 340/320;
+  aspect-ratio: 540/320;
   object-fit: cover;
-  max-width: 365px;
+  max-width: 565px;
   border-radius: 16px;
   width: 100%;
 }
@@ -66,6 +66,7 @@ ul {
   background-color: #495e57;
   padding-top: 24px;
   padding-bottom: 24px;
+  gap: 16px;
 }
 .hero-content {
   width: 430px;
@@ -99,7 +100,7 @@ ul {
 .specials-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 350px);
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 32px;
 }
 .special-card-header {
@@ -198,6 +199,52 @@ margin: 24px 0 24px;
   font-weight: bold;
   font-size: 14px;
 }
+.about-images{
+  display: grid;
+  grid-template-areas: "stack";
+}
+.about-image{
+  width: 300px;
+  grid-area: stack;
+  border-radius: 16px;
+}
+.about-image-front{
+  margin-top: 45%;
+  margin-left: -55%;
+  position: relative;
+  z-index: 10;
+}
+.restaurant-story{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  padding: 48px 96px;
+
+}
+.restaurant-story-content{
+  flex: 1;
+  max-width: 500px;
+  min-width: 0px;
+  color: #333333;
+}
+.restaurant-story-heading{
+  font-family: "Markazi Text", serif;
+  font-size: 48px;
+  color: #495E57;
+  font-weight:bold;
+  margin-bottom: 0px;
+}
+.restaurant-story-location{
+  margin-top: 0px;
+  font-family: "Markazi Text", serif;
+    font-size: 32px;
+}
+.restaurant-story-text{
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
@@ -243,13 +290,40 @@ margin: 24px 0 24px;
    grid-template-columns: repeat(3, 250px);
 }
 }
-@media (min-width: 376px) and (max-width: 900px) {
+@media (min-width: 531px) and (max-width: 900px) {
   .testimonials-container{
    grid-template-columns: repeat(2, 250px);
 }
 }
-@media (max-width: 375px) {
+@media (max-width: 530px) {
   .testimonials-container{
    grid-template-columns: 250px;
 }
+}
+@media (max-width: 1000px){
+  .hero-img {
+  aspect-ratio: 340/320;
+  max-width: 365px;
+}
+}
+@media (max-width: 1160px){
+  .restaurant-story{
+    flex-direction: column;
+  }
+}
+@media(max-width: 850px){
+  .about-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .about-image-front{
+    z-index: auto;
+  margin-top: 0;
+  margin-left: 0;
+  }
+  .about-image{
+    margin: 16px;;
+  }
 }

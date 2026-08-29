@@ -4,6 +4,7 @@ import Main from "./Main";
 import Footer from "./Footer";
 import Specials from "./Specials";
 import Testimonials from "./Testimonials";
+import RestaurantStory from "./RestaurantStory";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Header />
       <Main />
       <Specials />
-      <Testimonials/>
+      <Testimonials />
+      <RestaurantStory/>
       <Footer />
     </>
   );

@@ -3,7 +3,7 @@ const TestimonialCard = ({ userPhoto, rating, userName, review }) => {
     <article className="testimonial-card">
       <div className="testimonial-info">
         <div>
-                  <img className="reviewer-photo" src={userPhoto} alt={ userName} />
+          <img className="reviewer-photo" src={userPhoto} alt={userName} />
         </div>
         <div className="review-body">
           <p className="rating">Rating: {rating} ⭐️</p>
