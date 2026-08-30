@@ -1,70 +1,164 @@
-# Getting Started with Create React App
+# Little Lemon Restaurant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive React application for the fictional Little Lemon Mediterranean restaurant. The project is being developed as part of the Meta Front-End Developer Capstone.
 
-## Available Scripts
+## Project Status
 
-In the project directory, you can run:
+🚧 **Work in progress**
 
-### `npm start`
+The responsive homepage is currently under development. Routing, reservation functionality, accessibility improvements and automated tests will be added as the project progresses.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Before writing code, I created the **Little Lemon Design** project in Figma.
 
-### `npm test`
+The design process included:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Low-fidelity wireframes to define the page structure and functionality
+- A high-fidelity desktop mockup to establish typography, colours, spacing and visual hierarchy
+- Reusable UI components
+- An interactive prototype for the reservation flow
 
-### `npm run build`
+I then translated the design into semantic, reusable React components and implemented responsive behaviour for different viewport sizes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This follows a common frontend workflow:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```text
+Requirements
+→ Low-fidelity wireframes
+→ High-fidelity mockup
+→ Component planning
+→ React implementation
+→ Responsive testing
+→ Refinement
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In a professional team, UX/UI designers often supply wireframes and high-fidelity mockups. Frontend developers inspect those designs, identify reusable components and implement them as accessible, responsive interfaces.
 
-### `npm run eject`
+## Figma Design
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The **Little Lemon Design** project currently contains low-fidelity wireframes, reusable components, an interactive reservation prototype and a partially completed high-fidelity desktop homepage mockup.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [View the complete Little Lemon Design project](https://www.figma.com/design/4RYgzL3F7jbAaocUR3iZ0g/Little-Lemon---Design?m=auto&t=DcO0yFiTruYizEA4-1)
+- [View the low-fidelity wireframes](https://www.figma.com/design/4RYgzL3F7jbAaocUR3iZ0g/Little-Lemon---Design?node-id=0-1)
+- [View the high-fidelity homepage mockup — work in progress](https://www.figma.com/design/4RYgzL3F7jbAaocUR3iZ0g/Little-Lemon---Design?node-id=13-131)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Current Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Semantic React component structure
+- Responsive desktop and mobile layouts
+- Responsive navigation
+- Hero section with a reservation call to action
+- Specials rendered dynamically from data
+- Reusable Special Card component
+- Testimonials rendered dynamically from review data
+- Reusable Testimonial Card component
+- Responsive Restaurant Story section
+- Styling based on the Little Lemon brand guide
 
-## Learn More
+## Planned Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React Router navigation
+- Functional mobile navigation menu
+- Online table-reservation flow
+- Date, time and number-of-guests selection
+- Customer-details form
+- Form validation and accessible error messages
+- Booking confirmation page
+- Improved keyboard and screen-reader accessibility
+- Component and integration tests
+- Playwright end-to-end tests
+- Live deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies
 
-### Code Splitting
+- React
+- JavaScript
+- Semantic HTML
+- CSS
+- Flexbox
+- CSS Grid
+- Responsive media queries
+- Git and GitHub
+- Figma
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Component Structure
 
-### Analyzing the Bundle Size
+The application is divided into reusable components, including:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Header
+- Navigation
+- Hero
+- Specials
+- Special Card
+- Testimonials
+- Testimonial Card
+- Restaurant Story
+- Footer
+- Homepage
+- Booking Page
 
-### Making a Progressive Web App
+## Run Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Clone the repository:
 
-### Advanced Configuration
+```bash
+git clone https://github.com/glovatskiy/little-lemon.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Open the project directory:
 
-### Deployment
+```bash
+cd little-lemon
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Install the dependencies:
 
-### `npm run build` fails to minify
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Start the development server:
+
+```bash
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Skills Demonstrated
+
+- Translating Figma designs into React components
+- Planning reusable component architecture
+- Separating data from presentation
+- Rendering components dynamically with `.map()`
+- Passing data through props
+- Creating responsive layouts with Flexbox and Grid
+- Applying semantic HTML
+- Debugging layout and overflow problems
+- Using Git and GitHub to track feature development
+
+## Future Testing Strategy
+
+The finished project will include automated tests for important user journeys, such as:
+
+- Loading the homepage
+- Opening and closing the mobile navigation
+- Navigating to the reservation page
+- Validating reservation details
+- Completing a valid reservation
+- Displaying a booking confirmation
+
+Playwright will be considered for end-to-end browser testing.
+
+## Author
+
+**Vladislav Glovatskiy**
+
+- [GitHub](https://github.com/glovatskiy)
+
+## Acknowledgements
+
+Little Lemon is a fictional restaurant project from the Meta Front-End Developer Professional Certificate.
+
+I created the **Little Lemon Design** Figma project and implemented the responsive React application as a learning and portfolio project.

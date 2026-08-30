@@ -9,12 +9,14 @@ import RestaurantStory from "./RestaurantStory";
 function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Specials />
-      <Testimonials />
-      <RestaurantStory/>
-      <Footer />
+      <div className="page-wrapper">
+        <Header />
+        <Main />
+        <Specials />
+        <Testimonials />
+        <RestaurantStory />
+        <Footer />
+      </div>
     </>
   );
 }
