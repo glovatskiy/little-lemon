@@ -1,53 +1,62 @@
-import logo from "./assets/Logo.svg";
-import instagram from "./assets/instagram.svg"
-import facebook from "./assets/facebook.svg"
-import linkedin from "./assets/linkedin.svg"
+import footerLogo from "./assets/littlelemon-footerlogo.webp";
+import instagram from "./assets/socials/instagram.svg";
+import facebook from "./assets/socials/facebook.svg";
+import linkedin from "./assets/socials/linkedin.svg";
 const Footer = () => {
   return (
-    <footer>
-      <img src={logo} className="footer-logo"/>
+    <footer className="footer">
+      <img className="footer-logo" src={footerLogo} />
       <nav className="footer-nav">
-        <p>Navigation:</p>
+        <h2>Navigation</h2>
         <ul>
           <li>
-            <a href="">HOME</a>
+            <a href="">Home</a>
           </li>
           <li>
-            <a href="">ABOUT</a>
+            <a href="">About</a>
           </li>
           <li>
-            <a href="">MENU</a>
+            <a href="">Menu</a>
           </li>
           <li>
-            <a href="">RESERVATIONS</a>
+            <a href="">Reservations</a>
           </li>
           <li>
-            <a href="">ORDER ONLINE</a>
+            <a href="">Order online</a>
           </li>
           <li>
-            <a href="">LOGIN</a>
+            <a href="">Login</a>
           </li>
         </ul>
       </nav>
       <div className="footer-contacts">
         <h2>Contacts</h2>
-        <adress>
-          <p>Address</p>
-          <a href="tel:">Phone number</a>
-          <a href="mailto:">Email</a>
-        </adress>
+        <address className="contacts-info">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Little+Lemon+Chicago"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            123 Mediterranean Street,
+            <br /> Chicago, IL
+          </a>
+          <a href="tel:+1123456789">+1 123 456 789</a>
+          <a href="mailto:info@littlelemon.com">info@littlelemon.com</a>
+        </address>
       </div>
       <div className="footer-social">
-        <p>Sosial Media</p>
-        <a href="">
-          <img src={instagram} width={50} />
-        </a>
-        <a href="">
-          <img src={facebook} width={50} />
-        </a>
-        <a href="">
-          <img src={linkedin} width={50} />
-        </a>
+        <h2 className="footer-social-heading">Follow us</h2>
+        <div className="social-icons">
+          <a href="">
+            <img src={instagram} alt="Little Lemon's Instagram" />
+          </a>
+          <a href="">
+            <img src={facebook} alt="Little Lemon's Facebook" />
+          </a>
+          <a href="">
+            <img src={linkedin} alt="Little Lemon's Linkedin" />
+          </a>
+        </div>
       </div>
     </footer>
   );

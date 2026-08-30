@@ -1,8 +1,8 @@
 .page-wrapper {
   max-width: 1440px;
-  margin: 0 auto; /* Centers the whole website on 4K screens */
-  background-color: #ffffff; /* Or whatever your main background color is */
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05); /* Optional: Soft shadow on ultra-wide screens */
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
 }
 .header {
   display: flex;
@@ -16,12 +16,8 @@
   display: flex;
   gap: 32px;
 }
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 96px;
-  padding-right: 96px;
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -135,18 +131,18 @@ ul {
   font-size: 16px;
   font-weight: 700;
 }
-.order-delivery-img{
+.order-delivery-img {
   width: 20px;
   padding-left: 32px;
 }
-.card-delivery{
+.card-delivery {
   display: flex;
   align-items: center;
-margin-top: auto;
+  margin-top: auto;
   padding: 0 24px 24px;
 }
-.specials-button{
-    padding: 16px 24px;
+.specials-button {
+  padding: 16px 24px;
   background-color: #f4ce14;
   border: none;
   color: #333333;
@@ -154,7 +150,7 @@ margin-top: auto;
   font-weight: 500;
   border-radius: 16px;
 }
-.testimonials{
+.testimonials {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,96 +158,148 @@ margin-top: auto;
   padding: 32px;
   color: #495e57;
   padding-bottom: 40px;
- font-family: "Karla", sans-serif;
-
+  font-family: "Karla", sans-serif;
 }
-.testimonials-title{
-margin: 24px 0 24px;
+.testimonials-title {
+  margin: 24px 0 24px;
   color: #edefee;
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
-.testimonials-container{
+.testimonials-container {
   display: grid;
   grid-template-columns: repeat(5, 250px);
   gap: 24px;
   padding: 32px 0px;
 }
-.testimonial-card{
+.testimonial-card {
   background-color: #edefee;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.testimonial-info{
+.testimonial-info {
   display: flex;
   align-items: center;
 }
-.reviewer-photo{
+.reviewer-photo {
   width: 80px;
   border-radius: 50%;
   margin: 8px;
 }
-.reviewer-name{
+.reviewer-name {
   margin-top: auto;
 }
-.review-text{
-    font-family: "Karla", sans-serif;
+.review-text {
+  font-family: "Karla", sans-serif;
   font-size: 16px;
   padding-right: 4%;
 }
-.rating{
+.rating {
   font-weight: bold;
   font-size: 14px;
 }
-.about-images{
+.about-images {
   display: grid;
   grid-template-areas: "stack";
 }
-.about-image{
+.about-image {
   width: 300px;
   grid-area: stack;
   border-radius: 16px;
 }
-.about-image-front{
+.about-image-front {
   margin-top: 45%;
   margin-left: -55%;
   position: relative;
   z-index: 10;
 }
-.restaurant-story{
+.restaurant-story {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 48px;
   padding: 48px 96px;
-
 }
-.restaurant-story-content{
+.restaurant-story-content {
   flex: 1;
   max-width: 500px;
   min-width: 0px;
   color: #333333;
 }
-.restaurant-story-heading{
+.restaurant-story-heading {
   font-family: "Markazi Text", serif;
   font-size: 48px;
-  color: #495E57;
-  font-weight:bold;
+  color: #495e57;
+  font-weight: bold;
   margin-bottom: 0px;
 }
-.restaurant-story-location{
+.restaurant-story-location {
   margin-top: 0px;
   font-family: "Markazi Text", serif;
-    font-size: 32px;
+  font-size: 32px;
 }
-.restaurant-story-text{
+.restaurant-story-text {
   font-family: "Karla", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: space-between;
+  background-color: #495e57;
+  padding: 24px 96px;
+  color: white;
+}
+
+.footer-logo {
+  width: 96px;
+  height: 170px;
+  margin: 16px 0;
+}
+.footer-social {
+  color: white;
+}
+.footer-social a img {
+  filter: brightness(0) invert(1);
+}
+.footer a {
+  color: white;
+}
+.footer h2 {
+  font-size: 16px;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-nav ul {
+  padding: 0;
+  margin: 0;
+}
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.social-icons a {
+  padding: 0;
+  margin: 0;
+}
+.footer-social-heading {
+  margin-left: 4px;
+}
+.social-icons img {
+  width: 30px;
 }
 @media (max-width: 900px) {
   .hero {
@@ -279,6 +327,11 @@ margin: 24px 0 24px;
   .specials {
     padding: 32px 16px;
   }
+  .footer {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-around;
+    padding: 24px 40px;
+  }
 }
 @media (max-width: 962px) {
   .desktop-view {
@@ -294,44 +347,44 @@ margin: 24px 0 24px;
   }
 }
 @media (min-width: 901px) and (max-width: 1350px) {
-  .testimonials-container{
-   grid-template-columns: repeat(3, 250px);
-}
+  .testimonials-container {
+    grid-template-columns: repeat(3, 250px);
+  }
 }
 @media (min-width: 531px) and (max-width: 900px) {
-  .testimonials-container{
-   grid-template-columns: repeat(2, 250px);
-}
+  .testimonials-container {
+    grid-template-columns: repeat(2, 250px);
+  }
 }
 @media (max-width: 530px) {
-  .testimonials-container{
-   grid-template-columns: 250px;
+  .testimonials-container {
+    grid-template-columns: 250px;
+  }
 }
-}
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
   .hero-img {
-  aspect-ratio: 340/320;
-  max-width: 365px;
+    aspect-ratio: 340/320;
+    max-width: 365px;
+  }
 }
-}
-@media (max-width: 1160px){
-  .restaurant-story{
+@media (max-width: 1160px) {
+  .restaurant-story {
     flex-direction: column;
   }
 }
-@media(max-width: 850px){
-  .about-images{
+@media (max-width: 850px) {
+  .about-images {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  .about-image-front{
+  .about-image-front {
     z-index: auto;
-  margin-top: 0;
-  margin-left: 0;
+    margin-top: 0;
+    margin-left: 0;
   }
-  .about-image{
-    margin: 16px;;
+  .about-image {
+    margin: 16px;
   }
 }
