@@ -33,8 +33,6 @@ Requirements
 → Refinement
 ```
 
-In a professional team, UX/UI designers often supply wireframes and high-fidelity mockups. Frontend developers inspect those designs, identify reusable components and implement them as accessible, responsive interfaces.
-
 ## Figma Design
 
 The **Little Lemon Design** project currently contains low-fidelity wireframes, reusable components, an interactive reservation prototype and a partially completed high-fidelity desktop homepage mockup.
