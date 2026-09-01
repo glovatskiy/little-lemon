@@ -1,7 +1,7 @@
-import footerLogo from "./assets/littlelemon-footerlogo.webp";
-import instagram from "./assets/socials/instagram.svg";
-import facebook from "./assets/socials/facebook.svg";
-import linkedin from "./assets/socials/linkedin.svg";
+import footerLogo from "../assets/littlelemon-footerlogo.webp";
+import instagram from "../assets/socials/instagram.svg";
+import facebook from "../assets/socials/facebook.svg";
+import linkedin from "../assets/socials/linkedin.svg";
 const Footer = () => {
   return (
     <footer className="footer">

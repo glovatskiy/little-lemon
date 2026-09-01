@@ -1,9 +1,9 @@
 import TestimonialCard from "./TestimonialCard";
-import MistyBerry from "./assets/reviewers/MistyBerry.jpg";
-import IsaiahMitchell from "./assets/reviewers/IsaiahMitchell.jpg";
-import MelvinTurner from "./assets/reviewers/MelvinTurner.jpg";
-import MiriamSteward from "./assets/reviewers/MiriamSteward.jpg";
-import PeytonWeaver from "./assets/reviewers/PeytonWeaver.jpg";
+import MistyBerry from "../assets/reviewers/MistyBerry.jpg";
+import IsaiahMitchell from "../assets/reviewers/IsaiahMitchell.jpg";
+import MelvinTurner from "../assets/reviewers/MelvinTurner.jpg";
+import MiriamSteward from "../assets/reviewers/MiriamSteward.jpg";
+import PeytonWeaver from "../assets/reviewers/PeytonWeaver.jpg";
 const Testimonials = () => {
   const reviews = [
     {

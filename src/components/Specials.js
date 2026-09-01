@@ -1,7 +1,7 @@
 import SpecialCard from "./SpecialCard";
-import greekSalad from "./assets/specials/greek-salad.jpg";
-import bruchetta from "./assets/specials/bruchetta.svg";
-import lemonDessert from "./assets/specials/lemon-dessert.jpg";
+import greekSalad from "../assets/specials/greek-salad.jpg";
+import bruchetta from "../assets/specials/bruchetta.svg";
+import lemonDessert from "../assets/specials/lemon-dessert.jpg";
 
 const Specials = () => {
     const specials = [

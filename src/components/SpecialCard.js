@@ -1,4 +1,4 @@
-import deliveryIcon from "./assets/takeaway-fill-svgrepo-com.svg"
+import deliveryIcon from "../assets/takeaway-fill-svgrepo-com.svg"
 const SpecialCard = ({ image, foodName, price, description }) => {
   return (
     <article className="specials-card">

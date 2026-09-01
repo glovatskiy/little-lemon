@@ -1,5 +1,6 @@
-import logo from "./assets/Logo.svg"
-import hamburgerIcon from "./assets/🦆 icon _hamburger menu_.svg"
+import { Link } from "react-router-dom";
+import logo from "../assets/Logo.svg"
+import hamburgerIcon from "../assets/🦆 icon _hamburger menu_.svg"
 import { useState } from "react";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,10 +17,10 @@ const Header = () => {
         >
           <ul className="nav-items desktop-view">
             <li>
-              <a href="">HOME</a>
+              <Link to="/">HOME</Link>
             </li>
             <li>
-              <a href="">ABOUT</a>
+              <Link to="/about">ABOUT</Link>
             </li>
             <li>
               <a href="">MENU</a>

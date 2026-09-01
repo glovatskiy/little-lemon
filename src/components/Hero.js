@@ -1,4 +1,4 @@
-import restaurantFood from "./assets/restauranfood.jpg";
+import restaurantFood from "../assets/restauranfood.jpg";
 const Hero = () => {
   return (
     <section className="hero">

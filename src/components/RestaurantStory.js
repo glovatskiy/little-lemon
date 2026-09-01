@@ -1,5 +1,5 @@
-import MarioAdrianA from "./assets/about/Mario and Adrian A.jpg";
-import MarioAdrianB from "./assets/about/Mario and Adrian b.jpg";
+import MarioAdrianA from "../assets/about/Mario and Adrian A.jpg";
+import MarioAdrianB from "../assets/about/Mario and Adrian b.jpg";
 
 const RestaurantStory = () => {
     return (
