@@ -301,6 +301,13 @@ ul {
 .social-icons img {
   width: 30px;
 }
+
+/* BookingForm.js - Form styles */
+.reservation-form{
+  display: grid;
+  max-width: 200px;
+  gap: 20px;
+}
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;

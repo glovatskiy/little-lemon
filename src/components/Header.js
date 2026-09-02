@@ -26,7 +26,7 @@ const Header = () => {
               <a href="">MENU</a>
             </li>
             <li>
-              <a href="">RESERVATIONS</a>
+              <Link to="/reservation">RESERVATIONS</Link>
             </li>
             <li>
               <a href="">ORDER ONLINE</a>
