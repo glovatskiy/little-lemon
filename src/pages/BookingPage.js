@@ -7,8 +7,9 @@ const timeReducer = (state, action) => {
 
   return state;
 };
+export const initializeTimes = () => ["17:00", "18:00", "19:00", "20:00", "21:00"];
 const BookingPage = () => {
-  const initializeTimes = () => ["17:00", "18:00", "19:00", "20:00", "21:00"];
+
 const [availableTimes, dispatch] = useReducer(timeReducer, [], initializeTimes);
 
 const updateTimes = (date) => {
