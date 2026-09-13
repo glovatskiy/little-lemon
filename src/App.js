@@ -6,6 +6,7 @@ import About from "./pages/About";
 import { Route, Routes } from "react-router-dom";
 import BookingPage from "./pages/BookingPage";
 import ConfirmedBooking from "./pages/ConfirmedBooking";
+import ComingSoon from "./components/ComingSoon";
 
 function App() {
   return (
@@ -15,8 +16,36 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route
+            path="/menu"
+            element={
+              <ComingSoon
+                title="Menu"
+                message="We are currently updating our menu."
+              />
+            }
+          />
           <Route path="/reservation" element={<BookingPage />} />
-          <Route path="/confirmed" element={<ConfirmedBooking/>} />
+          <Route path="/confirmed" element={<ConfirmedBooking />} />
+          <Route
+            path="/order-online"
+            element={
+              <ComingSoon
+                title="Order Online"
+                message="This feature is coming soon."
+              />
+            }
+          />
+
+          <Route
+            path="/login"
+            element={
+              <ComingSoon
+                title="Login"
+                message="This feature is coming soon."
+              />
+            }
+          />
         </Routes>
         <Footer />
       </div>

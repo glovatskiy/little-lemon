@@ -18,7 +18,9 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
   return (
     <>
       <form className="reservation-form" onSubmit={handleSubmit}>
-        <label htmlFor="res-date">Choose date: {date}</label>
+        <label htmlFor="res-date">
+          Choose date <span className="required">*</span>
+        </label>
         <input
           id="res-date"
           type="date"
@@ -30,7 +32,9 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
           value={date}
           aria-label="Choose reservation date"
         />
-        <label htmlFor="res-time">Choose time: {time}</label>
+        <label htmlFor="res-time">
+          Choose time <span className="required">*</span>
+        </label>
         <select
           id="res-time"
           required
@@ -46,7 +50,10 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
             );
           })}
         </select>
-        <label htmlFor="guests">Number of guest: {guests}</label>
+        <label htmlFor="guests">
+          {" "}
+          Number of guests <span className="required">*</span>
+        </label>
         <input
           type="number"
           placeholder="1"
@@ -58,7 +65,7 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
           value={guests}
           aria-label="Number of guests"
         />
-        <label htmlFor="occasion">Occasion: {occasion}</label>
+        <label htmlFor="occasion">Occasion:</label>
         <select
           id="occasion"
           onChange={(event) => setOccasion(event.target.value)}
@@ -68,6 +75,15 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
           <option value="Birthday">Birthday</option>
           <option value="Anniversary">Anniversary</option>
         </select>
+        {isFormValid && (
+          <div className="reservation-summary">
+            <h3>Please confirm your reservation:</h3>
+            <p>Date: {date}</p>
+            <p>Time: {time}</p>
+            <p>Guests: {guests}</p>
+            <p>Occasion: {occasion || "None"}</p>
+          </div>
+        )}
         <input
           type="submit"
           value="Make Your reservation"
@@ -75,6 +91,9 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
           disabled={!isFormValid}
         />
       </form>
+      <p className="required-info">
+        <span className="required">*</span> Required fields
+      </p>
     </>
   );
 };

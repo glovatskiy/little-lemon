@@ -36,14 +36,15 @@ const BookingPage = () => {
     }
   };
   return (
-    <>
-      <h2>Book a table - form</h2>
+    <main className="booking-page">
+      <h2>Book a table</h2>
+
       <BookingForm
         availableTimes={availableTimes}
         updateTimes={updateTimes}
         submitForm={submitForm}
       />
-    </>
+    </main>
   );
 };
 export default BookingPage;

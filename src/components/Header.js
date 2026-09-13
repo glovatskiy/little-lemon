@@ -27,16 +27,16 @@ const Header = () => {
               <Link to="/about">ABOUT</Link>
             </li>
             <li>
-              <a href="#">MENU</a>
+              <Link to="/menu">MENU</Link>
             </li>
             <li>
               <Link to="/reservation">RESERVATIONS</Link>
             </li>
             <li>
-              <a href="#">ORDER ONLINE</a>
+              <Link to="/order-online">ORDER ONLINE</Link>
             </li>
             <li>
-              <a href="#">LOGIN</a>
+              <Link to="/login">LOGIN</Link>
             </li>
           </ul>
         </nav>
