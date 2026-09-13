@@ -1,12 +1,22 @@
 import { useState } from "react";
-const BookingForm = ({ availableTimes, updateTimes }) => {
+const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("");
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = {
+      date,
+      time,
+      guests,
+      occasion
+    }
+    submitForm(formData)
+  }
   return (
     <>
-      <form className="reservation-form">
+      <form className="reservation-form" onSubmit={handleSubmit}>
         <label htmlFor="res-date">Choose date: {date}</label>
         <input
           id="res-date"
