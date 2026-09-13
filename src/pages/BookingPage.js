@@ -42,3 +42,4 @@ const updateTimes = (date) => {
   );
 };
 export default BookingPage;
+export { timeReducer };
