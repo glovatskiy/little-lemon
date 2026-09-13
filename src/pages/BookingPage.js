@@ -2,12 +2,15 @@ import BookingForm from "../components/BookingForm";
 import { useReducer } from "react";
 const timeReducer = (state, action) => {
   if (action.type === "dateChanged") {
-    return ["17:00", "18:00", "19:00", "20:00", "21:00"];
+     return fetchAPI(new Date(action.date));
   }
 
   return state;
 };
-export const initializeTimes = () => ["17:00", "18:00", "19:00", "20:00", "21:00"];
+export const initializeTimes = () => {
+  const today = new Date();
+  return fetchAPI(today);
+};
 const BookingPage = () => {
 
 const [availableTimes, dispatch] = useReducer(timeReducer, [], initializeTimes);
