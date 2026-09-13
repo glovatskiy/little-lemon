@@ -9,7 +9,11 @@ const Header = () => {
     }
     return (
       <header className="header">
-        <img src={logo} className="header-logo" />
+        <img
+          src={logo}
+          className="header-logo"
+          alt="Little Lemon restaurant logo"
+        />
         <nav
           className={
             isOpen ? "nav-items-container open" : "nav-items-container"
@@ -23,16 +27,16 @@ const Header = () => {
               <Link to="/about">ABOUT</Link>
             </li>
             <li>
-              <a href="">MENU</a>
+              <a href="#">MENU</a>
             </li>
             <li>
               <Link to="/reservation">RESERVATIONS</Link>
             </li>
             <li>
-              <a href="">ORDER ONLINE</a>
+              <a href="#">ORDER ONLINE</a>
             </li>
             <li>
-              <a href="">LOGIN</a>
+              <a href="#">LOGIN</a>
             </li>
           </ul>
         </nav>
@@ -40,6 +44,7 @@ const Header = () => {
           className="nav-button mobile-view"
           onClick={toggleState}
           type="button"
+          aria-label="On Click"
         >
           <img src={hamburgerIcon} alt="Hamburger menu" />
         </button>

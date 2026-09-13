@@ -20,12 +20,12 @@ const RestaurantStory = () => {
           <img
             className="about-image "
             src={MarioAdrianA}
-            alt="Owners of the restaurant Mario and Adrian in the Little Lemon restaurant."
+            alt="Mario and Adrian preparing food at the Little Lemon restaurant"
           />
           <img
             className="about-image about-image-front"
             src={MarioAdrianB}
-            alt="Owners of the restaurant Mario and Adrian in the Little Lemon restaurant."
+            alt="Mario and Adrian standing together in the Little Lemon restaurant"
           />
         </div>
       </section>

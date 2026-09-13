@@ -6,7 +6,9 @@ const TestimonialCard = ({ userPhoto, rating, userName, review }) => {
           <img className="reviewer-photo" src={userPhoto} alt={userName} />
         </div>
         <div className="review-body">
-          <p className="rating">Rating: {rating} ⭐️</p>
+          <p className="rating" aria-label={`Rating ${rating} out of 5`}>
+            Rating: {rating} ⭐️
+          </p>
           <p className="review-text">{review}</p>
         </div>
       </div>

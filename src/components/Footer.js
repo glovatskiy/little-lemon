@@ -2,30 +2,31 @@ import footerLogo from "../assets/littlelemon-footerlogo.webp";
 import instagram from "../assets/socials/instagram.svg";
 import facebook from "../assets/socials/facebook.svg";
 import linkedin from "../assets/socials/linkedin.svg";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer">
-      <img className="footer-logo" src={footerLogo} />
+      <img className="footer-logo" src={footerLogo} alt="Little Lemon logo" />
       <nav className="footer-nav">
         <h2>Navigation</h2>
         <ul>
           <li>
-            <a href="">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="">Menu</a>
+            <Link to="#">Menu</Link>
           </li>
           <li>
-            <a href="">Reservations</a>
+            <Link to="/reservation">Reservations</Link>
           </li>
           <li>
-            <a href="">Order online</a>
+            <Link to="#">Order online</Link>
           </li>
           <li>
-            <a href="">Login</a>
+            <Link to="#">Login</Link>
           </li>
         </ul>
       </nav>
@@ -47,13 +48,13 @@ const Footer = () => {
       <div className="footer-social">
         <h2 className="footer-social-heading">Follow us</h2>
         <div className="social-icons">
-          <a href="">
+          <a href="#" aria-label="Little Lemon Instagram">
             <img src={instagram} alt="Little Lemon's Instagram" />
           </a>
-          <a href="">
+          <a href="#" aria-label="Little Lemon Facebook">
             <img src={facebook} alt="Little Lemon's Facebook" />
           </a>
-          <a href="">
+          <a href="#" aria-label="Little Lemon LinkedIn">
             <img src={linkedin} alt="Little Lemon's Linkedin" />
           </a>
         </div>

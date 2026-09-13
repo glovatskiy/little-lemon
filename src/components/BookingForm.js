@@ -4,6 +4,7 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("");
+  const isFormValid = date && time && guests;
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = {
@@ -21,15 +22,18 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
         <input
           id="res-date"
           type="date"
-                  onChange={(event) => {
-                      setDate(event.target.value);
-                      updateTimes(event.target.value);
-                   }}
+          required
+          onChange={(event) => {
+            setDate(event.target.value);
+            updateTimes(event.target.value);
+          }}
           value={date}
+          aria-label="Choose reservation date"
         />
         <label htmlFor="res-time">Choose time: {time}</label>
         <select
           id="res-time"
+          required
           onChange={(event) => setTime(event.target.value)}
           value={time}
         >
@@ -49,8 +53,10 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
           min="1"
           max="10"
           id="guests"
+          required
           onChange={(event) => setGuests(event.target.value)}
           value={guests}
+          aria-label="Number of guests"
         />
         <label htmlFor="occasion">Occasion: {occasion}</label>
         <select
@@ -62,7 +68,12 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
           <option value="Birthday">Birthday</option>
           <option value="Anniversary">Anniversary</option>
         </select>
-        <input type="submit" value="Make Your reservation" />
+        <input
+          type="submit"
+          value="Make Your reservation"
+          aria-label="On Click"
+          disabled={!isFormValid}
+        />
       </form>
     </>
   );
