@@ -3,9 +3,11 @@ import RestaurantStory from "../components/RestaurantStory"
 
 const About = () => {
     return (
-        <>
-            <RestaurantStory/>
-        </>
-    )
+      <>
+        <main className="about-page">
+          <RestaurantStory />
+        </main>
+      </>
+    );
 }
 export default About

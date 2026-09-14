@@ -229,7 +229,7 @@ ul {
   z-index: 10;
 }
 .restaurant-story {
-  min-height: clamp(500px, 70vh, 750px);
+  flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -259,6 +259,10 @@ ul {
   font-family: "Karla", sans-serif;
   font-size: 18px;
   font-weight: 400;
+}
+.about-page {
+  flex: 1;
+  display: flex;
 }
 .footer {
   display: grid;
@@ -365,13 +369,11 @@ ul {
   font-family: "Karla", sans-serif;
 }
 
-
 .reservation-form label {
   font-size: 18px;
   font-weight: 700;
   color: #333333;
 }
-
 
 .reservation-form input,
 .reservation-form select {
@@ -381,7 +383,6 @@ ul {
   border: 1px solid #495e57;
   border-radius: 8px;
 }
-
 
 .reservation-form input[type="submit"] {
   margin-top: 16px;
@@ -393,14 +394,13 @@ ul {
   padding: 16px;
 }
 
-
 .reservation-form input[type="submit"]:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
 .required {
-  color: #EE9972;
+  color: #ee9972;
   font-weight: bold;
 }
 
@@ -479,24 +479,24 @@ ul {
   .mobile-view {
     display: block;
   }
-  .header{
+  .header {
     flex-wrap: wrap;
   }
-  .nav-items-container{
+  .nav-items-container {
     flex-basis: 100%;
     order: 1;
     display: none;
   }
-  .nav-items{
+  .nav-items {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 0;
   }
-  .nav-items-container.open{
+  .nav-items-container.open {
     display: block;
   }
-.header-logo {
+  .header-logo {
     align-self: flex-start;
     margin-top: 10px;
   }
