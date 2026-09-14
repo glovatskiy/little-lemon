@@ -1,4 +1,8 @@
-# Little Lemon Restaurant 🍋
+# Little Lemon Restaurant 🍋 
+
+## Live Demo
+
+🌐 https://glovatskiy.github.io/little-lemon
 
 A responsive restaurant website built with React as part of the Meta Front-End Developer Professional Certificate capstone project.
 
@@ -79,3 +83,7 @@ Users select a reservation date, choose an available time, enter the number of g
 ## Accessibility & Responsive Design
 
 The project uses semantic HTML, connected form labels, image alternative text, and CSS media queries to provide a responsive and accessible user experience.
+
+## Key Learning
+
+This project helped me practice building a complete React application, including component architecture, state management, form handling, routing, accessibility, and testing.
