@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/little-lemon/static/css/main.048f2caa.css",
+    "main.js": "/little-lemon/static/js/main.868ea538.js",
+    "static/js/453.a05c62df.chunk.js": "/little-lemon/static/js/453.a05c62df.chunk.js",
+    "static/media/Mario and Adrian A.jpg": "/little-lemon/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
+    "static/media/Mario and Adrian b.jpg": "/little-lemon/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
+    "static/media/bruchetta.svg": "/little-lemon/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
+    "static/media/greek-salad.jpg": "/little-lemon/static/media/greek-salad.bed423a1fab5b210e347.jpg",
+    "static/media/restauranfood.jpg": "/little-lemon/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/Logo.svg": "/little-lemon/static/media/Logo.f72c913c48c5334f78f2c336ec36f22b.svg",
+    "static/media/littlelemon-footerlogo.webp": "/little-lemon/static/media/littlelemon-footerlogo.c1c9225af5a5efc5490f.webp",
+    "static/media/instagram.svg": "/little-lemon/static/media/instagram.b85a233c80324a2e22f1c54cf6c656eb.svg",
+    "static/media/takeaway-fill-svgrepo-com.svg": "/little-lemon/static/media/takeaway-fill-svgrepo-com.8d08ac3d346d8b8bd98c76f6d43bf3a3.svg",
+    "index.html": "/little-lemon/index.html",
+    "static/media/linkedin.svg": "/little-lemon/static/media/linkedin.b739aefaba8d52dd25370cc1525f0e37.svg",
+    "static/media/🦆 icon _hamburger menu_.svg": "/little-lemon/static/media/🦆 icon _hamburger menu_.0da6f67ced800ab909f63d5144de37ee.svg",
+    "static/media/facebook.svg": "/little-lemon/static/media/facebook.1c75947ffe76a642b176945f6b43adbd.svg",
+    "main.048f2caa.css.map": "/little-lemon/static/css/main.048f2caa.css.map",
+    "main.868ea538.js.map": "/little-lemon/static/js/main.868ea538.js.map",
+    "453.a05c62df.chunk.js.map": "/little-lemon/static/js/453.a05c62df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.048f2caa.css",
+    "static/js/main.868ea538.js"
+  ]
+}
