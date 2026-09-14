@@ -506,6 +506,15 @@ ul {
     background: none;
     border: none;
   }
+  .restaurant-story {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .coming-soon {
+    justify-content: flex-start;
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
 }
 @media (min-width: 901px) and (max-width: 1200px) {
   .specials-cards-container {

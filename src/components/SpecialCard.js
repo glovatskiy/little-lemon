@@ -1,4 +1,5 @@
 import deliveryIcon from "../assets/takeaway-fill-svgrepo-com.svg"
+import { Link } from "react-router-dom"
 const SpecialCard = ({ image, foodName, price, description }) => {
   return (
     <article className="specials-card">
@@ -9,9 +10,9 @@ const SpecialCard = ({ image, foodName, price, description }) => {
       </div>
       <p className="special-card-description">{description}</p>
       <div className="card-delivery">
-        <a className="order-delivery-link" href="/">
+        <Link className="order-delivery-link" to="/order-online">
           Order a delivery
-        </a>
+        </Link>
         <img className="order-delivery-img" src={deliveryIcon} alt="Delivery scooter icon"/>
       </div>
     </article>
