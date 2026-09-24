@@ -48,13 +48,25 @@ const Footer = () => {
       <div className="footer-social">
         <h2 className="footer-social-heading">Follow us</h2>
         <div className="social-icons">
-          <a href="#" aria-label="Little Lemon Instagram">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            aria-label="Little Lemon Instagram"
+          >
             <img src={instagram} alt="Little Lemon's Instagram" />
           </a>
-          <a href="#" aria-label="Little Lemon Facebook">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            aria-label="Little Lemon Facebook"
+          >
             <img src={facebook} alt="Little Lemon's Facebook" />
           </a>
-          <a href="#" aria-label="Little Lemon LinkedIn">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            aria-label="Little Lemon LinkedIn"
+          >
             <img src={linkedin} alt="Little Lemon's Linkedin" />
           </a>
         </div>
