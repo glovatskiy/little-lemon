@@ -9,11 +9,13 @@ const Header = () => {
     }
     return (
       <header className="header">
-        <img
-          src={logo}
-          className="header-logo"
-          alt="Little Lemon restaurant logo"
-        />
+        <Link to="/">
+          <img
+            src={logo}
+            className="header-logo"
+            alt="Little Lemon restaurant logo"
+          />
+        </Link>
         <nav
           className={
             isOpen ? "nav-items-container open" : "nav-items-container"
